@@ -1,0 +1,6 @@
+osをインストールする必要がある。
+
+スペック
+メモリ　4.0G
+OS　Windows10
+CPU　IntelCore i5
