@@ -4,10 +4,10 @@
     Author     : guest1Day
 --%>
 <%
-    for(int num =1;num<4;num++){
+    int num=1;
     if(num==1){out.print("1です！<br>");
     }else if(num==2){out.print("プログラミングキャンプ！<br>");
-    }else {out.print("その他です！！");}}
+    }else {out.print("その他です！！");}
     
     %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
