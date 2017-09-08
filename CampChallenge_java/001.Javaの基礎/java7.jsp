@@ -15,9 +15,15 @@
     <body>
         <%
             ArrayList<String> deta = new ArrayList<String>();
+    deta.add("10");
+    deta.add("100");
     deta.add("soeda");
-    deta.set(0, "33");
-    out.print(deta.get(0));
+    deta.add("hayashi");
+    deta.add("-20");
+    deta.add("118");
+    deta.add("end");
+    deta.set(2, "33");
+    out.print(deta.get(2));
         %>
     </body>
 </html>
