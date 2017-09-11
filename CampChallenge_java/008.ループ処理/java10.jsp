@@ -13,10 +13,13 @@
     </head>
     <body>
     <%
-       
+       String s1 = "moji";
        for (int i=0;i<30;i++){
-        String s1 = "A";
+        String s2 = "A";
+        s1 = s2;
     }
+       out.print(s1);
+      
 
        %>
     </body>
