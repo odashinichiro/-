@@ -17,12 +17,15 @@ import javax.servlet.http.HttpServletResponse;
  * @author guest1Day
  */
 public class method extends HttpServlet {
-    void myprofile(PrintWriter pw) {
+    boolean myprofile(PrintWriter pw) {
     
     pw.print("私は小田 慎一郎です<br>");
     pw.print("1995年1月29日に生まれました<br>");
     pw.print("ラーメンと甘いものが好きです<br>");
+    return true;
     } 
+    
+    
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,8 +41,13 @@ public class method extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            for (int i=0;i<10;i++){
-            myprofile(out);}
+            if (myprofile(out)){
+            out.print("この処理は正しく実行できました");
+            }else {
+                out.print("正しく実行できません");
+            }
+//            for (int i=0;i<10;i++){
+//            myprofile(out);}
             
         }
     }

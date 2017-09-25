@@ -16,17 +16,12 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author guest1Day
  */
-public class innsuu2 extends HttpServlet {
-void kadai(int num,int num2,boolean seigo,PrintWriter pw){
-    if(seigo == true){
-        pw.print((num * num2)*(num * num2));
-    }else{
-        pw.print(num * num2);
+public class modoriti extends HttpServlet {
+    String[] a(){
+    String[] b ={"01","oda","01/29","東京"};
+    return b;
     }
-}
-void kadai(int num,PrintWriter pw){
- kadai(num,5,false,pw);
-}
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -41,8 +36,11 @@ void kadai(int num,PrintWriter pw){
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-         
-        kadai(4,5,true,out);
+            String[] c = a();
+            for(int i = 1;i <4;i++){
+            out.print(c[i]);
+            }
+            
         }
     }
 
